@@ -1,0 +1,30 @@
+/* Profile.css */
+
+.profile-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Loading & Error States */
+.loading,
+.error {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Optional - for centering loading and error messages */
+.loading,
+.error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

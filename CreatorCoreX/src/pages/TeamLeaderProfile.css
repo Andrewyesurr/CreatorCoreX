@@ -1,0 +1,96 @@
+/* TeamLeaderProfile.css */
+
+.teamleader-profile-container {
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(180deg, #0a0a0a, #141414);
+  min-height: 100vh;
+}
+
+.teamleader-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.teamleader-pfp {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c2ff;
+  box-shadow: 0 0 12px rgba(0, 194, 255, 0.6);
+}
+
+.teamleader-info h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.teamleader-info p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.teamleader-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #00c2ff;
+}
+
+.stat-box p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.teamleader-bio,
+.teamleader-portfolio {
+  margin-top: 40px;
+}
+
+.teamleader-bio h3,
+.teamleader-portfolio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.teamleader-bio p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 194, 255, 0.4);
+}

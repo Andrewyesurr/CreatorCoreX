@@ -1,0 +1,277 @@
+/* Terms of Service Page Styles */
+.terms-of-service {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+  color: white;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 60px;
+}
+
+.terms-content {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.terms-section {
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.terms-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1877f2;
+  margin-bottom: 20px;
+}
+
+.terms-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 25px 0 15px;
+}
+
+.terms-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 20px 0 10px;
+}
+
+.terms-section p {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.terms-section ul {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.terms-section li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #1877f2;
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.acknowledgment {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.acknowledgment h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1877f2;
+  margin-bottom: 15px;
+}
+
+.acknowledgment p {
+  color: #555;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.terms-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quick-nav,
+.help-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+}
+
+.quick-nav {
+  padding: 30px 25px;
+}
+
+.quick-nav h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1877f2;
+  margin-bottom: 20px;
+}
+
+.quick-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-nav li {
+  margin-bottom: 12px;
+}
+
+.quick-nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.quick-nav a:hover {
+  background: #e3f2fd;
+  color: #1877f2;
+  transform: translateX(5px);
+}
+
+.help-box {
+  padding: 25px;
+  text-align: center;
+}
+
+.help-box h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.help-box p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-contact {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-contact:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .terms-sidebar {
+    order: -1;
+  }
+  
+  .quick-nav,
+  .help-box {
+    position: static;
+  }
+  
+  .quick-nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .terms-content {
+    padding: 30px 25px;
+  }
+  
+  .content-container {
+    padding: 40px 15px;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .terms-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .terms-content {
+    padding: 20px;
+  }
+  
+  .quick-nav ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info {
+    padding: 20px;
+  }
+}

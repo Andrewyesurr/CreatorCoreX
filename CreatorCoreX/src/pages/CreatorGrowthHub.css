@@ -1,0 +1,120 @@
+/* CreatorGrowthHub.css */
+
+.growthhub-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #141a203a;
+  color: #e5f6ff;
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+}
+
+.growthhub-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.growthhub-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.growthhub-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hub-title {
+  font-size: 3.2rem;
+  background: linear-gradient(to right, #00f0ff, #00ffa8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hub-subtext {
+  font-size: 1.25rem;
+  color: #d0f4ff;
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.hub-note {
+  font-size: 1rem;
+  color: #b0c8d8;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.hub-placeholder-box {
+  background-color: rgba(20, 20, 20, 0.6);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.1);
+  backdrop-filter: blur(8px);
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hub-placeholder-box h2 {
+  font-size: 1.8rem;
+  color: #00ffc3;
+  margin-bottom: 1rem;
+}
+
+.hub-placeholder-box p {
+  font-size: 1.05rem;
+  color: #cce7f0;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.hub-placeholder-box a {
+  color: #00ffc3;
+  text-decoration: none;
+}
+
+.hub-placeholder-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hub-title {
+    font-size: 2.3rem;
+  }
+
+  .hub-subtext {
+    font-size: 1.1rem;
+  }
+
+  .hub-note {
+    font-size: 0.95rem;
+  }
+
+  .hub-placeholder-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .hub-placeholder-box p {
+    font-size: 1rem;
+  }
+}

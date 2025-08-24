@@ -1,0 +1,134 @@
+.about-creator-core {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #0d0d0d5e;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.acc-hero-section {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.acc-video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.acc-hero-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.acc-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.acc-hero-subtitle {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Mission Section */
+.acc-mission-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #0f1114, #161b22);
+}
+
+.acc-section-heading {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #9aa0a6;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.acc-mission-text {
+  font-size: 2rem;
+  color: #f1f1f1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Split Video Panel */
+.acc-split-video-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.acc-split-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.35);
+}
+
+.acc-split-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 850px;
+  color: white;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Our Story Section */
+.acc-story-section {
+  background: linear-gradient(to bottom, #ecf1f6, #ddeeea);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.acc-story-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #333;
+}
+
+.acc-story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.acc-story-box {
+  background: #f7f9fa;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #333;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.acc-story-box:hover {
+  transform: translateY(-4px);
+}

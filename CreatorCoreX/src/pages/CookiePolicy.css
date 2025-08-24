@@ -1,0 +1,65 @@
+.policy-container {
+  padding: 80px 20px;
+  background: #1f1212;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.policy-box {
+  background: #978181;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+}
+
+.policy-box h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.policy-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.policy-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.policy-box a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.policy-box a:hover {
+  text-decoration: underline;
+}
+
+.policy-box ul {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.policy-box ul li {
+  line-height: 1.6;
+}
+
+.cookie-table {
+  background: #362f2f;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+}

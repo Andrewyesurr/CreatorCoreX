@@ -1,0 +1,99 @@
+.manage-bookings-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.manage-bookings-container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: blur(3px); /* Optional frost effect */
+}
+
+.manage-left {
+  flex: 1;
+  background-color: rgba(11, 15, 19, 0.85);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10rem;
+  text-align: left;
+}
+
+.manage-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.calendar-icon {
+  font-size: 2.4rem;
+  margin-right: 12px;
+  vertical-align: middle;
+  color: #00e6f6;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6));
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.9));
+  }
+}
+
+.booking-highlight {
+  color: #00e676;
+  text-shadow: 0 0 12px rgba(0, 230, 118, 0.5);
+}
+
+.manage-left p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #b3b3b3;
+}
+
+.login-btn {
+  margin-top: 2rem;
+  background-color: #00e676;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 0 20px #00ffbf66;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #00c766;
+  box-shadow: 0 0 24px #00ffbfaa;
+}
+
+.manage-right {
+  flex: 1;
+  background-color: rgba(11, 15, 19, 0.85); /* match the dark frosted left */
+  backdrop-filter: blur(3px); /* keeps the blur on the right side too */
+}

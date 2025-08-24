@@ -1,0 +1,55 @@
+/* CreatePost.css */
+
+.create-post-wrapper {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-post-container {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 12px rgba(0, 162, 255, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.create-post-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.post-input,
+.post-file {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.post-submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.post-submit-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}

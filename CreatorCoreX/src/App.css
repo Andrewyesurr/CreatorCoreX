@@ -1,0 +1,86 @@
+/* Profile follow button modern style */
+.profile-follow-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.profile-follow-btn {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 28px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(108, 92, 231, 0.08);
+  outline: none;
+  margin-bottom: 4px;
+}
+.profile-follow-btn.following {
+  background: #e0e0e0;
+  color: #333;
+  border: 1px solid #bdbdbd;
+}
+.profile-follow-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.profile-follow-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid #6a82fb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.profile-follow-error {
+  color: #e74c3c;
+  font-size: 0.97em;
+  margin-top: 2px;
+}
+/* === App.css – Layout & Content Styling === */
+
+/* Scroll Fix: Prevent content from being hidden behind sticky header */
+html {
+  scroll-padding-top: 100px; /* Adjust if your header height changes */
+  scroll-behavior: smooth;
+}
+
+header,
+footer {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content:empty {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Duplicate .app-wrapper and .main-content removed for cleanliness */

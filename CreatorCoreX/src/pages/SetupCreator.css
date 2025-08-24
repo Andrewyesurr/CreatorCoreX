@@ -1,0 +1,158 @@
+/* General container */
+.creator-setup {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Background video */
+.creator-video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+/* Overlay for forms */
+.creator-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Setup step block */
+.creator-step {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 0.8s ease;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+
+.creator-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.creator-subtext {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.creator-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.creator-btn {
+  background-color: #00c2ff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.creator-btn:hover {
+  background-color: #00e1ff;
+}
+
+.creator-link {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #00c2ff;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.creator-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Welcome screen */
+.creator-welcome-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOutVideo 4s ease forwards;
+}
+
+.creator-welcome-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.creator-welcome-text {
+  position: relative;
+  z-index: 1;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  animation: textFadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeOutVideo {
+  0% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

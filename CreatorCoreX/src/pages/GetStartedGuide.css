@@ -1,0 +1,103 @@
+/* Page wrapper */
+.get-started-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Background video */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(6px) brightness(0.4);
+}
+
+/* Content wrapper */
+.get-started-wrapper {
+  padding: 120px 20px 80px; /* Space under nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header Section */
+.get-started-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+  margin-bottom: 15px;
+}
+
+.get-started-header p {
+  font-size: 1.1rem;
+  max-width: 750px;
+  color: #dbeafe;
+  margin: 0 auto 60px;
+}
+
+/* Watch Section */
+.get-started-video h2 {
+  font-size: 1.5rem;
+  color: #00ffd5;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px rgba(0, 255, 213, 0.6);
+}
+
+.video-container {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* CTA Section */
+.get-started-cta h3 {
+  font-size: 1.4rem;
+  color: #66f6ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px #66f6ff;
+}
+
+.cta-button {
+  background-color: #00eaff;
+  color: #0a0a0a;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00bcd4;
+}
+
+/* Contact Section */
+.get-started-contact {
+  margin-top: 60px;
+  font-size: 0.95rem;
+}
+
+.get-started-contact a {
+  color: #00eaff;
+  text-decoration: underline;
+}

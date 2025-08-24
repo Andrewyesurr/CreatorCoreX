@@ -1,0 +1,64 @@
+.role-selector-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.role-video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+.role-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  backdrop-filter: blur(4px);
+}
+
+.role-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.role-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.role-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.role-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.role-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}

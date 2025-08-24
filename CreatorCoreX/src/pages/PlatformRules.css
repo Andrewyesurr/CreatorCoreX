@@ -1,0 +1,88 @@
+.platform-rules-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.rules-bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(6px) brightness(0.4);
+}
+
+.platform-rules-overlay {
+  padding: 120px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rules-header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+  margin-bottom: 20px;
+}
+
+.rules-header p {
+  font-size: 1.1rem;
+  max-width: 750px;
+  color: #dbeafe;
+  margin-bottom: 60px;
+}
+
+.rules-section {
+  margin-bottom: 60px;
+  max-width: 850px;
+  text-align: left;
+}
+
+.rules-section h2 {
+  font-size: 1.6rem;
+  color: #00ffd5;
+  text-shadow: 0 0 8px rgba(0, 255, 213, 0.6);
+  margin-bottom: 20px;
+}
+
+.rules-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.rules-section li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #e6f1ff;
+}
+
+.rules-section p {
+  font-size: 1.05rem;
+  color: #dbeafe;
+  line-height: 1.7;
+}
+
+.rules-contact {
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+.rules-contact a {
+  color: #00eaff;
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}

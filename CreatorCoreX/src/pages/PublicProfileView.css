@@ -1,0 +1,43 @@
+/* ==== PublicProfileView.css ==== */
+.public-profile {
+  padding: 40px;
+  background: #0e0e0e;
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-stats span {
+  margin-right: 20px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.username {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.full-name {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff20;
+}

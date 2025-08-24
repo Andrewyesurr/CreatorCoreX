@@ -1,0 +1,317 @@
+/* Modal overlay and box */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-box {
+  background: #181a20;
+  border-radius: 18px;
+  padding: 32px 24px 24px 24px;
+  min-width: 340px;
+  max-width: 600px;
+  width: 95vw;
+  max-height: 95vh;
+  box-shadow: 0 0 24px 0 rgba(0,0,0,0.4);
+  position: relative;
+  color: #fff;
+}
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Carousel preview */
+.carousel-preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 4px;
+  justify-content: center;
+}
+.carousel-thumb {
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+.carousel-thumb.active {
+  border: 2px solid #6a82fb;
+}
+
+/* Cropper section */
+.crop-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Cropper container (inline style in JSX, but for fallback) */
+.cropper-container {
+  width: 350px;
+  height: 350px;
+  background: #222;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 12px auto;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.controls label {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 8px;
+}
+.controls input[type="range"] {
+  accent-color: #6a82fb;
+  width: 120px;
+}
+.crop-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+/* Modern button styles */
+.modal-action-btn, .gradient-btn, .next-button, .post-button {
+  padding: 8px 22px;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(106,130,251,0.08);
+}
+.modal-action-btn:hover, .gradient-btn:hover, .next-button:hover, .post-button:hover {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(252,92,125,0.18);
+}
+
+/* Details section */
+.details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.preview-media {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #222;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 60px;
+  max-height: 120px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  resize: vertical;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.location-input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.visibility-toggle {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  justify-content: flex-start;
+}
+.visibility-toggle label {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.visibility-radio {
+  display: none;
+}
+.visibility-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #23243a;
+  color: #fff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid #23243a;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  margin-right: 4px;
+}
+.visibility-radio:checked + .visibility-btn {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  border: 2px solid #6a82fb;
+  box-shadow: 0 2px 8px rgba(106,130,251,0.12);
+}
+.visibility-btn:active {
+  transform: scale(0.97);
+}
+.upload-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #222;
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.upload-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  border-radius: 6px;
+  transition: width 0.3s;
+}
+.error-text {
+  color: #fc5c7d;
+  font-size: 15px;
+  margin-top: 8px;
+  text-align: center;
+}
+.create-post-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.create-post-content {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 24px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.crop-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.crop-container .reactEasyCrop_Container {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #000 !important;
+}
+
+.slider-container {
+  width: 100%;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.slider-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+  color: #bbb;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #00ffff;
+}
+
+.next-button,
+.post-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00ffff, #0077ff);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.next-button:hover,
+.post-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  color: white;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.caption-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: white;
+  resize: none;
+  margin-bottom: 20px;
+}

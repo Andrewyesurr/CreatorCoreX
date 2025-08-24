@@ -1,0 +1,730 @@
+/* Creator Spotlights Page Styles - Luxury Black Design */
+
+/* CSS Override - Prevent .main-content from centering .page-wrapper */
+.main-content:has(.page-wrapper) {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.page-wrapper {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  background: #0e0e10 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  font-family: 'Poppins', sans-serif !important;
+  overflow-x: hidden !important;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 30%, #C0C0C0 70%, #D4AF37 100%);
+  color: #0e0e10;
+  padding: 100px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  opacity: 0.8;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Section Styles */
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 70px;
+}
+
+/* Featured Creator Section */
+.featured-creator {
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  margin-bottom: 80px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f8fafe;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.featured-image {
+  position: relative;
+  text-align: center;
+}
+
+.creator-avatar-large {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1877f2, #166fe5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto 20px;
+  box-shadow: 0 15px 40px rgba(24, 119, 242, 0.3);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: #ffd700;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.featured-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.creator-type {
+  font-size: 1.2rem;
+  color: #1877f2;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.creator-stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1877f2;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.creator-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.creator-achievements h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.creator-achievements ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.creator-achievements li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.view-profile-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+/* Creator Categories Section */
+.creator-categories {
+  padding: 80px 20px;
+  background: #f8fafe;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(24, 119, 242, 0.15);
+}
+
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.category-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.category-stats {
+  background: #1877f2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Trending Creators Section */
+.trending-creators {
+  padding: 80px 20px;
+  background: white;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.creator-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.creator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(24, 119, 242, 0.15);
+}
+
+.creator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.creator-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1877f2, #166fe5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.trending-indicator {
+  background: #ff6b6b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.creator-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.creator-niche {
+  color: #1877f2;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.creator-bio {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.creator-metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1877f2;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.creator-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #e6f3ff;
+  color: #1877f2;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Creator Achievements Section */
+.creator-achievements {
+  padding: 80px 20px;
+  background: #f8fafe;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(24, 119, 242, 0.15);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.achievement-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.winner, .collab-item {
+  background: #f8fafe;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.milestone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.milestone-number {
+  width: 50px;
+  height: 50px;
+  background: #1877f2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.milestone-text {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Spotlight Application Section */
+.spotlight-application {
+  padding: 80px 20px;
+  background: white;
+}
+
+.application-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.application-info h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.application-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.requirements h4,
+.benefits h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1877f2;
+  margin-bottom: 15px;
+}
+
+.requirements ul,
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.requirements li,
+.benefits li {
+  color: #555;
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.requirements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1877f2;
+  font-weight: 700;
+}
+
+.benefits li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: 700;
+}
+
+.application-form {
+  background: #f8fafe;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.application-form h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.spotlight-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.1);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  color: #1877f2;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #1877f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .featured-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .creator-stats {
+    justify-content: space-around;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trending-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .application-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .creator-avatar-large {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+  
+  .featured-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .creator-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .creator-card, .achievement-card, .application-form {
+    padding: 25px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}

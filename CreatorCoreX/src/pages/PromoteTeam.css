@@ -1,0 +1,86 @@
+/* PromoteTeam.css */
+.promote-hero-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.promo-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.promote-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 6%;
+  min-height: 100vh;
+  background: rgba(5, 10, 20, 0.8);
+  backdrop-filter: blur(14px);
+  border-radius: 28px;
+  box-shadow: 0 0 120px rgba(0, 255, 255, 0.05);
+  position: relative;
+}
+
+.promo-left {
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+}
+
+.promo-left h1 {
+  font-size: 4rem;
+  color: #f0faff;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-shadow: 0 0 14px #00e5ffb3;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.promo-left p {
+  font-size: 1.3rem;
+  color: #a0bfc5;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+.promote-button {
+  padding: 18px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #00e676, #00bfa5);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 16px rgba(0, 255, 128, 0.4);
+  transition: all 0.3s ease;
+}
+
+.promote-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 128, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .promo-left h1 {
+    font-size: 3rem;
+  }
+
+  .promo-left p {
+    margin: 0 auto 30px;
+  }
+
+  .promote-button {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,455 @@
+/* Our Mission Page Styles */
+.our-mission {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.content-sections {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mission-statement {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.statement-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #1877f2;
+}
+
+.lead-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #1877f2;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.mission-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.visual-element {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  border: 1px solid #dee2e6;
+}
+
+.mission-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.visual-element h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1877f2;
+}
+
+.visual-element p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.core-beliefs {
+  padding: 80px 0;
+  background: #f8f9fa;
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.core-beliefs h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1877f2;
+}
+
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.belief-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.belief-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.belief-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.belief-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1877f2;
+}
+
+.belief-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.our-vision {
+  padding: 80px 0;
+}
+
+.our-vision h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1877f2;
+}
+
+.vision-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vision-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.vision-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.vision-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.vision-goals {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #1877f2;
+}
+
+.vision-goals h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1877f2;
+  text-align: center;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.goal-icon {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.goal-text strong {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.goal-text p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mission-pillars {
+  padding: 80px 0;
+  background: #f8f9fa;
+  margin: 0 -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mission-pillars h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #1877f2;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.pillar-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-number {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background: #1877f2;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.pillar-card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.pillar-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pillar-features span {
+  background: #e3f2fd;
+  color: #1877f2;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.call-to-action {
+  padding: 80px 0;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1877f2;
+}
+
+.cta-content > p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.cta-option {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f1f3f4;
+  transition: all 0.3s ease;
+}
+
+.cta-option:hover {
+  border-color: #1877f2;
+  transform: translateY(-5px);
+}
+
+.cta-option h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cta-option p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: #1877f2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1877f2;
+  border: 2px solid #1877f2;
+}
+
+.btn-secondary:hover {
+  background: #1877f2;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .mission-statement,
+  .vision-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .beliefs-grid,
+  .pillars-grid,
+  .cta-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-sections {
+    padding: 0 15px;
+  }
+  
+  .core-beliefs,
+  .mission-pillars {
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .lead-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .pillar-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

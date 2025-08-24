@@ -1,0 +1,102 @@
+/* Onboarding main page styles */
+.onboarding-page {
+  max-width: 600px;
+  margin: 48px auto;
+  background: #181a20;
+  border-radius: 18px;
+  padding: 40px 32px 32px 32px;
+  color: #fff;
+  box-shadow: 0 0 24px 0 rgba(0,0,0,0.18);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.onboarding-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fc5c7d;
+}
+
+.onboarding-page p {
+  color: #bbb;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.onboarding-page ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.onboarding-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.onboarding-page label {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.onboarding-page input[type="text"],
+.onboarding-page input[type="number"],
+.onboarding-page input[type="file"],
+.onboarding-page input[type="email"],
+.onboarding-page input[type="password"],
+.onboarding-page textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #23243a;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 4px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.onboarding-page textarea {
+  min-height: 60px;
+  max-height: 120px;
+  resize: vertical;
+}
+
+.onboarding-page .modal-action-btn,
+.onboarding-page .gradient-btn {
+  padding: 10px 28px;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(106,130,251,0.08);
+  margin-top: 12px;
+}
+.onboarding-page .modal-action-btn:hover,
+.onboarding-page .gradient-btn:hover {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(252,92,125,0.18);
+}
+
+.onboarding-stepper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.error-text {
+  color: #fc5c7d;
+  font-size: 1rem;
+  margin-top: 8px;
+  text-align: center;
+}

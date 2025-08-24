@@ -1,0 +1,164 @@
+.team-help-page {
+  position: relative;
+  overflow: hidden;
+  background-color: #09090ab2;
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.team-help-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0d131493;
+  z-index: 2;
+  position: relative;
+}
+
+/* ==== HEADER ==== */
+.team-help-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.team-help-header h1 {
+  font-size: 3rem;
+  color: #00eaff;
+  text-shadow: 0 0 12px rgba(0, 234, 255, 0.5);
+}
+.team-help-header p {
+  font-size: 1.2rem;
+  color: #c0eaff;
+  max-width: 800px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+/* ==== VIDEO SECTION ==== */
+.team-help-video {
+  text-align: center;
+  margin: 4rem auto;
+}
+.team-help-video h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ffc3;
+  text-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.30%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.2);
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ==== CTA BUTTON ==== */
+.team-help-cta {
+  text-align: center;
+  margin-top: 1rem;
+}
+.team-help-cta h3 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 4rem;
+}
+.cta-button {
+  background-color: #17af68;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e2d9d9;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.3);
+  transition: 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #00c766;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 128, 0.5);
+}
+
+/* ==== CONTACT ==== */
+.team-help-contact {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #b3ddee;
+}
+.team-help-contact a {
+  color: #80deea;
+  text-decoration: underline;
+}
+
+/* ==== HOMEPAGE BUTTON GROUP FIX ==== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.homepage-btn {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #0a0f15;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.15);
+  transition: 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.homepage-btn:hover {
+  background-color: #35a88d;
+  color: #000;
+  box-shadow: 0 0 20px rgba(31, 194, 202, 0.4);
+  transform: scale(1.05);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .team-help-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .homepage-btn {
+    width: 100%;
+  }
+}
