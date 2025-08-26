@@ -110,7 +110,7 @@ const Explore = () => {
                 onClick={() => setSelectedPost(post)}
               >
                 <img
-                  src={post.imageUrl || "/default-post.jpg"}
+                  src={(post.imageUrls && post.imageUrls[0]) || "/default-post.jpg"}
                   alt={post.caption || "Post"}
                   className="explore-img"
                 />

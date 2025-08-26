@@ -250,10 +250,10 @@ const OwnerProfileView = ({ userData }) => {
               {posts.map(post => (
                 <div className="profile-post-card" key={post._id}>
                   <div className="profile-post-media-wrap">
-                    {post.imageUrl && post.imageUrl.match(/\.(mp4|webm|ogg)$/i) ? (
-                      <video src={fixUrl(post.imageUrl)} className="profile-post-media" />
+                    {post.imageUrls && post.imageUrls[0] && post.imageUrls[0].match(/\.(mp4|webm|ogg)$/i) ? (
+                      <video src={fixUrl(post.imageUrls[0])} className="profile-post-media" />
                     ) : (
-                      <img src={fixUrl(post.imageUrl)} alt="post" className="profile-post-media" />
+                      <img src={fixUrl(post.imageUrls && post.imageUrls[0])} alt="post" className="profile-post-media" />
                     )}
                   </div>
                   {/* Optionally overlay icons for video/reel here */}

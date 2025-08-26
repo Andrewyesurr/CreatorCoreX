@@ -64,19 +64,21 @@ router.get('/:postId/comments', async (req, res) => {
 /**
  * POST /api/posts - upload a new post
  */
-router.post("/", verifyToken, upload.single("image"), async (req, res) => {
+router.post("/", verifyToken, upload.array("images"), async (req, res) => {
   try {
     const { caption, location, tags } = req.body;
-    const file = req.file;
+    const files = req.files;
 
-    if (!file) return res.status(400).json({ msg: "No image uploaded." });
+    if (!files || files.length === 0) return res.status(400).json({ msg: "No images uploaded." });
     if (!caption) return res.status(400).json({ msg: "Caption is required." });
+
+    const imageUrls = files.map(f => `/uploads/${f.filename}`);
 
     const newPost = await Post.create({
       uid: req.user.id,
       username: req.user.username,
       caption,
-      imageUrl: `/uploads/${file.filename}`,
+      imageUrls,
       role: req.user.role,
       location: location || "",
       tags: tags ? String(tags).split(",").map((t) => t.trim()).filter(Boolean) : [],
