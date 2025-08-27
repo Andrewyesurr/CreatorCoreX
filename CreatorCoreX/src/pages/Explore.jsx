@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PostModal from "../components/PostModal";
 import axios from "axios";
 import "./Explore.css";
 // import ModalForPost from "../components/ModalForPost"; // Ensure it's moved to a separate file and properly imported
@@ -110,7 +111,7 @@ const Explore = () => {
                 onClick={() => setSelectedPost(post)}
               >
                 <img
-                  src={(post.imageUrls && post.imageUrls[0]) || "/default-post.jpg"}
+                  src={post.imageUrls && post.imageUrls[0] ? `${import.meta.env.VITE_API_URL}${post.imageUrls[0]}` : "/default-post.jpg"}
                   alt={post.caption || "Post"}
                   className="explore-img"
                 />
@@ -125,9 +126,7 @@ const Explore = () => {
             <p className="no-posts">No posts found.</p>
           )}
         </div>
-        {selectedPost && (
-          {/* ModalForPost removed */}
-        )}
+  <PostModal post={selectedPost} open={!!selectedPost} onClose={() => setSelectedPost(null)} />
       </div>
       <div className="explore-right">
         <input
